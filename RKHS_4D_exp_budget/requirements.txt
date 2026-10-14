@@ -1,0 +1,7 @@
+numpy==1.26.4
+scipy==1.11.1
+matplotlib==3.7.2
+psutil==5.9.0
+
+# Validation tests
+pytest==7.4.0
