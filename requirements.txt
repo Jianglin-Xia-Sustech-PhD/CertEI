@@ -1,6 +1,0 @@
-numpy==1.26.4
-scipy==1.11.1
-matplotlib==3.7.2
-# Numerical validation only:
-pytest
-mpmath
