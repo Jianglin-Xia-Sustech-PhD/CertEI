@@ -1,0 +1,115 @@
+{
+  "master_seed": 20260827,
+  "dimension": 4,
+  "domain": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "n_basis": 100,
+  "weight_distribution": "standard normal",
+  "shared_basis_and_weights": true,
+  "basis_weight_sha256": "2ef4e828e719747b943e964e4325300bb2eb5f34ac0d2a7ee5fdb0a4fa3ca652",
+  "lengthscale": 0.2,
+  "functions": {
+    "rkhs_matern52_4d": {
+      "file": "rkhs_matern52_4d.npz",
+      "kernel": "matern52",
+      "kernel_form": "radial/isotropic scaled Euclidean distance",
+      "matern_nu": 2.5,
+      "lengthscale": 0.2,
+      "optimum_x": [
+        0.6805402490273122,
+        0.6170899869061854,
+        0.06721772706399812,
+        0.6266047964733139
+      ],
+      "optimum_value": -5.390637117348674,
+      "maximum_x": [
+        0.2917184296693506,
+        0.14317497559479617,
+        0.6411868959885303,
+        0.46024960506381385
+      ],
+      "maximum_value": 3.21952401368533,
+      "response_range": 8.610161131034005,
+      "rkhs_norm": 11.255655394024766,
+      "noise_sd_min_multiplier": 0.75,
+      "noise_sd_max_multiplier": 3.0,
+      "noise_sd_min": 6.4576208482755035,
+      "noise_sd_max": 25.830483393102014,
+      "noise_variance_min": 41.700867020082434,
+      "noise_variance_max": 667.213872321319,
+      "minimum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 164,
+        "differential_evolution_evaluations": 6447,
+        "screening_extreme": -5.34368775553064,
+        "refined_extreme": -5.390637117348674
+      },
+      "maximum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 164,
+        "differential_evolution_evaluations": 6639,
+        "screening_extreme": 3.1982178339894727,
+        "refined_extreme": 3.21952401368533
+      }
+    },
+    "rkhs_se_4d": {
+      "file": "rkhs_se_4d.npz",
+      "kernel": "squared_exponential",
+      "kernel_form": "radial/isotropic scaled Euclidean distance",
+      "matern_nu": null,
+      "lengthscale": 0.2,
+      "optimum_x": [
+        0.6780592678884376,
+        0.6210869110533925,
+        0.0663217703644849,
+        0.6190677490459399
+      ],
+      "optimum_value": -6.000294659291487,
+      "maximum_x": [
+        0.27207155609908673,
+        0.15208503823363778,
+        0.6211844892354973,
+        0.47627991809537057
+      ],
+      "maximum_value": 3.2172468875929425,
+      "response_range": 9.21754154688443,
+      "rkhs_norm": 11.31841158756444,
+      "noise_sd_min_multiplier": 0.75,
+      "noise_sd_max_multiplier": 3.0,
+      "noise_sd_min": 6.9131561601633225,
+      "noise_sd_max": 27.65262464065329,
+      "noise_variance_min": 47.79172809480409,
+      "noise_variance_max": 764.6676495168655,
+      "minimum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 164,
+        "differential_evolution_evaluations": 6245,
+        "screening_extreme": -5.903525634699234,
+        "refined_extreme": -6.000294659291487
+      },
+      "maximum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 164,
+        "differential_evolution_evaluations": 5861,
+        "screening_extreme": 3.2006871954788343,
+        "refined_extreme": 3.2172468875929425
+      }
+    }
+  }
+}
