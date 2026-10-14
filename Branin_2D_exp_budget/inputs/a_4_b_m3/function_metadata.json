@@ -1,0 +1,129 @@
+{
+  "analytic_optima_injected": false,
+  "candidate_count": 2048,
+  "candidate_rule": "pure scrambled Sobol points on [0,1]^2; no analytic global minimizers are injected",
+  "functions": {
+    "rescaled_branin": {
+      "candidate_file": "rescaled_branin_sobol_candidates_2048.npy",
+      "candidate_sha256": "a8f499be6d5140fb0d3935f724190b3c31e48d5f9af8822e4d0be73341e7727e",
+      "display_name": "Rescaled Branin",
+      "initial_kernel_calibration": {
+        "budgets": [
+          2981,
+          13360,
+          59874
+        ],
+        "macro_ids": [
+          1001,
+          1100
+        ],
+        "macros_per_budget": 100,
+        "output_standardization": "(f - f_min) / (f_max - f_min)",
+        "per_budget": {
+          "13360": {
+            "lengthscale_median": [
+              0.17003862501543307,
+              0.19471564946674624
+            ],
+            "lengthscale_q25": [
+              0.06250948662678976,
+              0.0788934515101458
+            ],
+            "lengthscale_q75": [
+              0.3754384934919093,
+              0.4507795283643026
+            ],
+            "process_variance_median": 0.045428745980449076,
+            "process_variance_q25": 0.020145775994054538,
+            "process_variance_q75": 0.08540861085980966
+          },
+          "2981": {
+            "lengthscale_median": [
+              0.1653403734197218,
+              0.19314965399849418
+            ],
+            "lengthscale_q25": [
+              0.062186115656868574,
+              0.07456754274667156
+            ],
+            "lengthscale_q75": [
+              0.4059083906398169,
+              0.4859113564147861
+            ],
+            "process_variance_median": 0.048958698418040625,
+            "process_variance_q25": 0.019145363788805245,
+            "process_variance_q75": 0.09805746542178703
+          },
+          "59874": {
+            "lengthscale_median": [
+              0.1836475536463584,
+              0.20002992851721052
+            ],
+            "lengthscale_q25": [
+              0.06710758260133054,
+              0.07990854979094786
+            ],
+            "lengthscale_q75": [
+              0.3838981052411669,
+              0.3950733151914237
+            ],
+            "process_variance_median": 0.04216527037081294,
+            "process_variance_q25": 0.020677336703118113,
+            "process_variance_q75": 0.0848800964198255
+          }
+        },
+        "pooled_lengthscale_median": [
+          0.17394295452363112,
+          0.19640641158481897
+        ],
+        "pooled_lengthscale_q25": [
+          0.06271541833103701,
+          0.07630742850834389
+        ],
+        "pooled_lengthscale_q75": [
+          0.4024786184845023,
+          0.4334404237652617
+        ],
+        "pooled_process_variance_median": 0.0452354631420889,
+        "pooled_process_variance_q25": 0.02023887916791659,
+        "pooled_process_variance_q75": 0.08833031458576343
+      },
+      "maximum_value": 4.876209740358164,
+      "noise_a_multiplier": 4.0,
+      "noise_b_multiplier": -3.0,
+      "noise_relationship": "sigma/R_f = 4 + -3*z, z=(f-f_min)/(f_max-f_min)",
+      "noise_sd_max": 23.694414525803733,
+      "noise_sd_min": 5.923603631450933,
+      "optimum_points": [
+        [
+          0.1238938230940138,
+          0.8183333333333334
+        ],
+        [
+          0.5427728435726529,
+          0.15166666666666667
+        ],
+        [
+          0.961651864051292,
+          0.165
+        ]
+      ],
+      "optimum_value": -1.047393891092769,
+      "output_location": -1.047393891092769,
+      "output_scale": 5.923603631450933,
+      "output_standardization": "(f - f_min) / (f_max - f_min)",
+      "reference_constant_mean": 0.29215281408568106,
+      "reference_lengthscales": [
+        0.17394295452363112,
+        0.19640641158481897
+      ],
+      "reference_process_variance": 0.0452354631420889,
+      "reference_rkhs_intercept_standardized": 0.29215281408568106,
+      "response_range": 5.923603631450933,
+      "rkhs_norm": 6.129876973764997,
+      "standardized_noise_sd_max": 4.0,
+      "standardized_noise_sd_min": 1.0
+    }
+  },
+  "reference_rkhs_rule": "Mat\u00e9rn-5/2 finite-grid norm on a 15x15 grid after fixed output standardization; ARD lengthscales and kernel process variance are pooled medians of unregularized initial-GP MLEs from held-out calibration macros 1001--1100 across all three budgets"
+}
