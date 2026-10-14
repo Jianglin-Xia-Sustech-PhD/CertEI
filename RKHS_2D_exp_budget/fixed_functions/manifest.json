@@ -1,0 +1,95 @@
+{
+  "master_seed": 20260827,
+  "dimension": 2,
+  "domain": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "n_basis": 100,
+  "weight_distribution": "standard normal",
+  "shared_basis_and_weights": true,
+  "basis_weight_sha256": "5f898921e457525de05d7d0a4b23f439fcd0ba908725431d06a0d1f7befaba5f",
+  "lengthscale": 0.2,
+  "functions": {
+    "rkhs_matern52_2d": {
+      "file": "rkhs_matern52_2d.npz",
+      "kernel": "matern52",
+      "kernel_form": "radial/isotropic scaled Euclidean distance",
+      "matern_nu": 2.5,
+      "lengthscale": 0.2,
+      "optimum_x": [
+        0.058755376217288956,
+        0.952745516879327
+      ],
+      "optimum_value": -2.945546171716392,
+      "maximum_x": [
+        0.6510056492779716,
+        0.09871804990132141
+      ],
+      "maximum_value": 3.0724797599009332,
+      "response_range": 6.018025931617325,
+      "rkhs_norm": 6.931366904431354,
+      "heavy_noise_sd_min": 9.027038897425989,
+      "heavy_noise_sd_max": 36.108155589703955,
+      "heavy_noise_variance_min": 81.48743125564181,
+      "heavy_noise_variance_max": 1303.798900090269,
+      "minimum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 152,
+        "differential_evolution_evaluations": 1875,
+        "screening_extreme": -2.9455129581630035,
+        "refined_extreme": -2.945546171716392
+      },
+      "maximum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 152,
+        "differential_evolution_evaluations": 1779,
+        "screening_extreme": 3.0724144817538406,
+        "refined_extreme": 3.0724797599009332
+      }
+    },
+    "rkhs_se_2d": {
+      "file": "rkhs_se_2d.npz",
+      "kernel": "squared_exponential",
+      "kernel_form": "radial/isotropic scaled Euclidean distance",
+      "matern_nu": null,
+      "lengthscale": 0.2,
+      "optimum_x": [
+        0.6099839221113506,
+        0.5373954691133994
+      ],
+      "optimum_value": -3.0810546486254866,
+      "maximum_x": [
+        0.11582117521080608,
+        0.2084103739891194
+      ],
+      "maximum_value": 3.369256286559419,
+      "response_range": 6.4503109351849055,
+      "rkhs_norm": 6.935835223313497,
+      "heavy_noise_sd_min": 9.675466402777358,
+      "heavy_noise_sd_max": 38.70186561110943,
+      "heavy_noise_variance_min": 93.61465011127343,
+      "heavy_noise_variance_max": 1497.834401780375,
+      "minimum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 152,
+        "differential_evolution_evaluations": 1779,
+        "screening_extreme": -3.0809304139309956,
+        "refined_extreme": -3.0810546486254866
+      },
+      "maximum_search": {
+        "sobol_points": 262144,
+        "multistart_count": 152,
+        "differential_evolution_evaluations": 1443,
+        "screening_extreme": 3.369251144625232,
+        "refined_extreme": 3.369256286559419
+      }
+    }
+  }
+}
